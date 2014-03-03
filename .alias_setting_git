@@ -12,4 +12,4 @@ alias gitcm="git commit -a"
 
 alias gitrbr="git remote show origin"
 alias gitrpr="git remote prune origin"
-alias gitbr="git branch -all"
+alias gitbr="git branch -a"
