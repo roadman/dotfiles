@@ -1,0 +1,15 @@
+## git
+alias gitdf="git diff"
+alias gitst="git status"
+alias gitpsm="git push origin master"
+alias gitps="git push origin"
+alias gitpl="git pull"
+#alias gitlg="git log"
+alias gitlg="git log --graph --name-status --relative-date --decorate --color"
+alias gitlgo="git log --oneline --decorate"
+alias gitlgf="git log --name-status"
+alias gitcm="git commit -a"
+
+alias gitrbr="git remote show origin"
+alias gitrpr="git remote prune origin"
+alias gitbr="git branch -all"

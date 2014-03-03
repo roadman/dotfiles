@@ -1,0 +1,5 @@
+alias dockps='docker ps -a'
+alias dockpsl='docker ps -a -l'
+alias dockstl='docker start `docker ps -l -q`'
+alias dockatl='docker attach `docker ps -l -q`'
+alias dockin='docker start `docker ps -l -q`; docker attach `docker ps -l -q`'
