@@ -5,4 +5,4 @@ defkanji utf-8
 #defencoding utf-8
 hardstatus off
 defscrollback 10000
-caption always "%{b RK} %H %l %y/%m/%d %c %{bu dr} | %-w%{=bu CK}%n %t%{-}%+w"
+caption always "sochiai.com %{b RK} %H %l %y/%m/%d %c %{bu dr} | %-w%{=bu CK}%n %t%{-}%+w"
