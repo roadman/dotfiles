@@ -4,7 +4,8 @@ alias rerc="source .bashrc"
 alias screen="screen -d -R -U"
 alias setdate="sudo ntpdate ntp.nict.jp"
 alias vi=`which vim`
-alias ls="ls -lta"
+alias ls="ls -lt"
+alias lsa="ls -lta"
 alias his="history"
 
 ## yum
