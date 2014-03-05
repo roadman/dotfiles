@@ -11,10 +11,16 @@ fi
 #PATH=/usr/bin/:$PATH:/sbin/:/usr/local/sbin/
 export LANG=ja_JP.UTF-8
 
+PLATFORM=`uname`
+
 # User specific aliases and functions
 . ~/.alias_setting
 . ~/.alias_setting_ssh
 . ~/.alias_setting_git
+
+if [ $PLATFORM = "Darwin" ];then
+    . ~/.alias_setting_mac
+fi
 
 if [ -f /usr/share/git-core/contrib/completion/git-completion.bash ]; then
     source /usr/share/git-core/contrib/completion/git-completion.bash
@@ -64,12 +70,12 @@ if [ -d /usr/local/git-1.9.0 ];then
     export PATH="/usr/local/git-1.9.0/bin/:$PATH"
 fi
 
-if [ `uname` = "Darwin" ];then
+if [ $PLATFORM = "Darwin" ];then
     Z_PATH=`brew --prefix`/etc/profile.d/z.sh
     if [ -f $Z_PATH ]; then
         . $Z_PATH
     fi
-elif [ `uname` = "Linux" ];then
+elif [ $PLATFORM = "Linux" ];then
     Z_PATH=/etc/profile.d/z.sh
     if [ -f $Z_PATH ]; then
         . $Z_PATH

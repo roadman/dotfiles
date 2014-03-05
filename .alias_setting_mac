@@ -1,0 +1,7 @@
+# User specific aliases and functions
+
+#
+# android dev
+#
+alias androidemu='~/android-sdks/tools/emulator -avd 2.2_HTCAriaS31HT_HVGA -partition-size 128'
+
