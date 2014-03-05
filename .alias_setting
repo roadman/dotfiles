@@ -10,3 +10,14 @@ alias his="history"
 ## yum
 alias yumls="yum list installed"
 
+#
+# android dev
+#
+alias androidemu='~/android-sdks/tools/emulator -avd 2.2_HTCAriaS31HT_HVGA -partition-size 128'
+
+## dropbox 
+alias drop="python ~/dropbox-script/dropbox.py"
+alias dropst="python ~/dropbox-script/dropbox.py status"
+alias drophelp="python ~/dropbox-script/dropbox.py help"
+alias dropboxstart="~/.dropbox-dist/dropbox start"
+
