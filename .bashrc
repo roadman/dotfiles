@@ -13,6 +13,7 @@ export LANG=ja_JP.UTF-8
 
 # User specific aliases and functions
 . ~/.alias_setting
+. ~/.alias_setting_ssh
 . ~/.alias_setting_git
 
 if [ -f /usr/share/git-core/contrib/completion/git-completion.bash ]; then

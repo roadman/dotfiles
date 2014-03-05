@@ -1,0 +1,12 @@
+# User specific aliases and functions
+
+alias rerc="source .bashrc"
+alias screen="screen -d -R -U"
+alias setdate="sudo ntpdate ntp.nict.jp"
+alias vi=`which vim`
+alias ls="ls -lta"
+alias his="history"
+
+## yum
+alias yumls="yum list installed"
+

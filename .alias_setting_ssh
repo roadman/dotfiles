@@ -1,0 +1,23 @@
+# User specific aliases and functions
+
+##
+## ssh (remote server)
+##
+# sakura vps
+#alias sshdev02='ssh sochiai.com -p 10022 -l roadman'    # sakura vps(1G): centos6.0 roadman
+alias sshdev02='mosh roadman@sochiai.com'    # sakura vps(1G): centos6.0 roadman
+
+# ngi
+#
+alias sshdevngi='ssh 192.168.12.131 -l seiji-ochiai'    # ngi: seiji-ochiai dev
+#
+# android dev
+#
+alias androidemu='~/android-sdks/tools/emulator -avd 2.2_HTCAriaS31HT_HVGA -partition-size 128'
+
+alias sshec2adstir='ssh ec2-user@mon.ad-stir.com -i ~/.ssh/id_ec2_adstir.pem'
+#alias sshec2adstir='mosh --ssh="ssh -i ~/.ssh/id_ec2_adstir.pem" ec2-user@mon.ad-stir.com'
+#alias sshec2recdev='ssh ec2-user@54.199.233.46 -i ~/.ssh/id_ec2_adstir.pem'
+alias sshec2recdev='mosh ec2-user@54.199.233.46 --ssh="ssh -i ~/.ssh/id_ec2_adstir.pem"'
+alias sshec2bypass='ssh dsp-st1.bypass.jp -l bypass'
+
