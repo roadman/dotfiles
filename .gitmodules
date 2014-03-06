@@ -13,9 +13,6 @@
 [submodule ".vim/bundle/sudo"]
 	path = .vim/bundle/sudo
 	url = git://github.com/vim-scripts/sudo.vim.git
-[submodule ".vim/bundle/vim-yankring"]
-	path = .vim/bundle/vim-yankring
-	url = git://github.com/chrismetcalf/vim-yankring.git
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
