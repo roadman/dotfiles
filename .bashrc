@@ -47,6 +47,12 @@ if [ -d $HOME/.rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
+
+if [ -d $HOME/.pyenv ]; then
+  export PATH="$HOME/.pyenv/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
+
 if [ -d $HOME/.plenv ]; then
   export PATH=~/.plenv/bin:~/.plenv/shims/:$PATH
 else
@@ -81,4 +87,3 @@ elif [ $PLATFORM = "Linux" ];then
         . $Z_PATH
     fi
 fi
-
