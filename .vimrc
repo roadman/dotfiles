@@ -44,8 +44,7 @@ let g:treeExplHidden = 1
 
 " vim-matchit
 runtime macros/matchit.vim
-let b:match_words = "if:endif"
-let b:match_words = "<:>"
+let b:match_words = "if:endif,(:),{:},[:]"
 
 " vim-yankring
 nnoremap <silent> <F7> :YRShow<CR>

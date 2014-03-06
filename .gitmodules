@@ -55,3 +55,6 @@
 [submodule ".vim/bundle/YankRing"]
 	path = .vim/bundle/YankRing
 	url = git://github.com/vim-scripts/YankRing.vim.git
+[submodule ".vim/bundle/vim-matchit"]
+	path = .vim/bundle/vim-matchit
+	url = git://github.com/tsaleh/vim-matchit.git
