@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/bufexplorer"]
 	path = .vim/bundle/bufexplorer
 	url = git://github.com/corntrace/bufexplorer.git
-[submodule ".vim/bundle/sudo"]
-	path = .vim/bundle/sudo
-	url = git://github.com/vim-scripts/sudo.vim.git
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
