@@ -46,10 +46,11 @@ if [ -d $HOME/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
+#export PATH=/Users/roadmang/local/ruby-2.0.0/bin:$PATH
 
 
 if [ -d $HOME/.pyenv ]; then
-  export PATH="$HOME/.pyenv/bin:$PATH"
+  export PATH=~/.pyenv/shims:$PATH
   eval "$(pyenv init -)"
 fi
 
