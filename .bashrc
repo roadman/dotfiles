@@ -50,7 +50,7 @@ fi
 
 
 if [ -d $HOME/.pyenv ]; then
-  export PATH=~/.pyenv/shims:$PATH
+  export PATH=~/.pyenv/bin:~/.pyenv/shims:$PATH
   eval "$(pyenv init -)"
 fi
 
@@ -87,4 +87,8 @@ elif [ $PLATFORM = "Linux" ];then
     if [ -f $Z_PATH ]; then
         . $Z_PATH
     fi
+fi
+
+if [ -d $HOME/github/chatwork-api-command ];then
+    export PATH="$PATH:$HOME/github/chatwork-api-command/"
 fi
