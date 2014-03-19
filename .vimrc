@@ -10,15 +10,52 @@ set laststatus=2
 set hlsearch
 set virtualedit=block
 syntax on
-
 filetype off
-" pathogen
-"call pathogen#incubate()
-call pathogen#incubate()
-call pathogen#helptags()
-set helpfile=$VIMRUNTIME/doc/help.txt
-"filetype on
+
+" -> netbundle config start
+ if has('vim_starting')
+    set nocompatible               " Be iMproved
+
+    " Required:
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" My Bundles here:
+NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'vim-jp/vimdoc-ja'
+NeoBundle 'vim-jp/vital.vim'
+NeoBundle 'vim-scripts/buftabs'
+NeoBundle 'vim-scripts/YankRing.vim'
+NeoBundle 'thinca/vim-ref'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'corntrace/bufexplorer'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'tpope/vim-abolish'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'hallettj/jslint.vim'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'taku-o/vim-toggle'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tsaleh/vim-matchit'
+NeoBundle 'mattn/webapi-vim'
+
+" Required:
 filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+" -> netbundle config finish
 
 au BufNewFile,BufRead *.go setf GO
 
