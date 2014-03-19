@@ -87,3 +87,5 @@ elif [ $PLATFORM = "Linux" ];then
         . $Z_PATH
     fi
 fi
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
