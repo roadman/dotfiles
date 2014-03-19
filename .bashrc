@@ -46,10 +46,11 @@ if [ -d $HOME/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
+#export PATH=/Users/roadmang/local/ruby-2.0.0/bin:$PATH
 
 
 if [ -d $HOME/.pyenv ]; then
-  export PATH="$HOME/.pyenv/bin:$PATH"
+  export PATH=~/.pyenv/bin:~/.pyenv/shims:$PATH
   eval "$(pyenv init -)"
 fi
 
@@ -87,5 +88,10 @@ elif [ $PLATFORM = "Linux" ];then
         . $Z_PATH
     fi
 fi
+
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
+
+if [ -d $HOME/github/chatwork-api-command ];then
+    export PATH="$PATH:$HOME/github/chatwork-api-command/"
+fi
