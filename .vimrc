@@ -46,8 +46,8 @@ NeoBundle 'hallettj/jslint.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'taku-o/vim-toggle'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'tsaleh/vim-matchit'
 NeoBundle 'mattn/webapi-vim'
+"NeoBundle 'tsaleh/vim-matchit'
 
 " Required:
 filetype plugin indent on
