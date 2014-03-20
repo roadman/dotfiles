@@ -9,6 +9,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 #PATH=/usr/bin/:$PATH:/sbin/:/usr/local/sbin/
+PATH=/usr/local/bin:$PATH
 export LANG=ja_JP.UTF-8
 
 PLATFORM=`uname`
