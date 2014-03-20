@@ -90,6 +90,9 @@ elif [ $PLATFORM = "Linux" ];then
     fi
 fi
 
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+
 if [ -d $HOME/github/chatwork-api-command ];then
     export PATH="$PATH:$HOME/github/chatwork-api-command/"
 fi
