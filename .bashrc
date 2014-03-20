@@ -47,8 +47,6 @@ if [ -d $HOME/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
-#export PATH=/Users/roadmang/local/ruby-2.0.0/bin:$PATH
-
 
 if [ -d $HOME/.pyenv ]; then
   export PATH=~/.pyenv/bin:~/.pyenv/shims:$PATH
@@ -57,12 +55,7 @@ fi
 
 if [ -d $HOME/.plenv ]; then
   export PATH=~/.plenv/bin:~/.plenv/shims/:$PATH
-else
-  export XBUILD_HOME=$HOME/xbuild
-  if [ -d $XBUILD_HOME ]; then
-    export PATH=$PATH:$XBUILD_HOME
-  fi
-  export PATH=$HOME/local/perl-5.16/bin:$PATH
+  eval "$(plenv init -)"
 fi
 
 export GOPATH=$HOME/_go
@@ -90,9 +83,10 @@ elif [ $PLATFORM = "Linux" ];then
     fi
 fi
 
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-
 if [ -d $HOME/github/chatwork-api-command ];then
     export PATH="$PATH:$HOME/github/chatwork-api-command/"
+fi
+
+if [ -f $HOME/.bash_xbuild ]; then
+   source $HOME/.bash_xbuild
 fi
