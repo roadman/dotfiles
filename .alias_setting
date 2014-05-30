@@ -4,7 +4,7 @@ alias rerc="source $HOME/.bashrc"
 alias screen="screen -d -R -U"
 alias setdate="sudo ntpdate ntp.nict.jp"
 alias vi=`which vim`
-alias ls="ls -lt"
+alias ls="ls -l"
 alias lsa="ls -lta"
 alias his="history"
 
@@ -12,3 +12,8 @@ alias his="history"
 alias yumls="yum list installed"
 
 alias cwp="chatwork-cmd post-mes"
+
+#capistrano (3.1.0, 2.15.5)
+alias cap2="cap _2.15.5_"
+alias cap3="cap _3.1.0_"
+
