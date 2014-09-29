@@ -12,6 +12,8 @@ fi
 PATH=/usr/local/bin:$PATH
 export LANG=ja_JP.UTF-8
 
+export HOMEBREW_CACHE=~/Library/Caches/Homebrew/
+
 PLATFORM=`uname`
 
 # User specific aliases and functions
