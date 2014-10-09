@@ -47,6 +47,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'taku-o/vim-toggle'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'mattn/webapi-vim'
+NeoBundle 'fatih/vim-go'
 "NeoBundle 'tsaleh/vim-matchit'
 
 " Required:
@@ -211,3 +212,8 @@ else
 endif
 
 set rtp+=/usr/local/go/misc/vim
+
+if $GOROOT != ''
+    set rtp+=$GOROOT/misc/vim
+endif
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
