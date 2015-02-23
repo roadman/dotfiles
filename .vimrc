@@ -28,6 +28,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
+NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimshell'
@@ -60,8 +61,15 @@ NeoBundleCheck
 
 au BufNewFile,BufRead *.go setf GO
 
+set rtp+=$GOROOT/misc/vim
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+exe "set rtp+=".globpath($GOPATH, "src/github.com/golang/lint/misc/vim")
+
 vnoremap < <gv
 vnoremap > >gv
+
+nnoremap ; :
+nnoremap : ;
 
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
@@ -211,9 +219,3 @@ else
   call unite#custom#substitute('file', '^;v', '~/.vim/')
 endif
 
-set rtp+=/usr/local/go/misc/vim
-
-if $GOROOT != ''
-    set rtp+=$GOROOT/misc/vim
-endif
-exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
