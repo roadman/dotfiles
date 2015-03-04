@@ -41,22 +41,22 @@ fi
 unset bash bmajor bminor
 
 if [ -d $HOME/.nvm ]; then
-  . ~/.nvm/nvm.sh
+  . $HOME/.nvm/nvm.sh
   nvm use default
 fi
 
 if [ -d $HOME/.rbenv ]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
+  export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims/$PATH"
   eval "$(rbenv init -)"
 fi
 
 if [ -d $HOME/.pyenv ]; then
-  export PATH=~/.pyenv/bin:~/.pyenv/shims:$PATH
+  export PATH=$HOME/.pyenv/bin:$HOME/.pyenv/shims:$PATH
   eval "$(pyenv init -)"
 fi
 
 if [ -d $HOME/.plenv ]; then
-  export PATH=~/.plenv/bin:~/.plenv/shims/:$PATH
+  export PATH=$HOME/.plenv/bin:$HOME/.plenv/shims/:$PATH
   eval "$(plenv init -)"
 fi
 
