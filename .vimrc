@@ -47,7 +47,7 @@ NeoBundle 'hallettj/jslint.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'taku-o/vim-toggle'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'mattn/webapi-vim'
+"NeoBundle 'mattn/webapi-vim'
 NeoBundle 'fatih/vim-go'
 "NeoBundle 'tsaleh/vim-matchit'
 
