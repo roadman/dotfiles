@@ -46,7 +46,7 @@ if [ -d $HOME/.nvm ]; then
 fi
 
 if [ -d $HOME/.rbenv ]; then
-  export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims/$PATH"
+  export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
   eval "$(rbenv init -)"
 fi
 
@@ -68,10 +68,6 @@ fi
 
 if [ -d $HOME/vimbuild ]; then
     export PATH="$HOME/vimbuild/build/7.4/vim74/src:$PATH"
-fi
-
-if [ -d /usr/local/git-1.9.0 ];then
-    export PATH="/usr/local/git-1.9.0/bin:$PATH"
 fi
 
 if [ $PLATFORM = "Darwin" ];then
