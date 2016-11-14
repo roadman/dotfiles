@@ -50,6 +50,7 @@ NeoBundle 'tpope/vim-surround'
 "NeoBundle 'mattn/webapi-vim'
 NeoBundle 'fatih/vim-go'
 "NeoBundle 'tsaleh/vim-matchit'
+NeoBundle 'tpope/vim-rails'
 
 " Required:
 filetype plugin indent on

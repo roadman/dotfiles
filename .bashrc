@@ -18,7 +18,6 @@ PLATFORM=`uname`
 
 # User specific aliases and functions
 . ~/.alias_setting
-. ~/.alias_setting_ssh
 . ~/.alias_setting_git
 
 if [ $PLATFORM = "Darwin" ];then
