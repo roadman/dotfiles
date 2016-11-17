@@ -4,7 +4,7 @@ alias rerc="source $HOME/.bashrc"
 alias screen="screen -d -R -U"
 alias setdate="sudo ntpdate ntp.nict.jp"
 alias vi=`which vim`
-alias ls="ls -l"
+alias lsl="ls -l"
 alias lsa="ls -lta"
 alias his="history"
 
@@ -19,4 +19,3 @@ alias cap3="cap _3.1.0_"
 
 # luarocks
 alias luarocks="luarocks --local"
-
