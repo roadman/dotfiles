@@ -19,14 +19,17 @@ PLATFORM=`uname`
 # User specific aliases and functions
 . ~/.alias_setting
 . ~/.alias_setting_git
-. ~/.alias_setting_xcode
+
+if [ -f ~/.alias_setting_xcode ]; then
+  . ~/.alias_setting_xcode
+fi
 
 if [ $PLATFORM = "Darwin" ];then
-    . ~/.alias_setting_mac
+  . ~/.alias_setting_mac
 fi
 
 if [ -f /usr/share/git-core/contrib/completion/git-completion.bash ]; then
-    source /usr/share/git-core/contrib/completion/git-completion.bash
+  source /usr/share/git-core/contrib/completion/git-completion.bash
 fi
 
 ## bash_completion
