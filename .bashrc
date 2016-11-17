@@ -18,6 +18,7 @@ PLATFORM=`uname`
 
 # User specific aliases and functions
 . ~/.alias_setting
+. ~/.alias_setting_ssh
 . ~/.alias_setting_git
 . ~/.alias_setting_xcode
 
