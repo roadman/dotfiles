@@ -20,6 +20,7 @@ PLATFORM=`uname`
 . ~/.alias_setting
 . ~/.alias_setting_ssh
 . ~/.alias_setting_git
+. ~/.alias_setting_xcode
 
 if [ $PLATFORM = "Darwin" ];then
     . ~/.alias_setting_mac
@@ -39,11 +40,6 @@ if [ $bmajor -gt 3 ] || [ $bmajor -eq 3 -a $bminor -ge 2 ]; then
     fi
 fi
 unset bash bmajor bminor
-
-if [ -d $HOME/.nvm ]; then
-  . $HOME/.nvm/nvm.sh
-  nvm use default
-fi
 
 if [ -d $HOME/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims/$PATH"
@@ -93,3 +89,7 @@ fi
 if [ -f $HOME/.bash_xbuild ]; then
    source $HOME/.bash_xbuild
 fi
+
+source ~/.nvm/nvm.sh
+#nvm use default
+

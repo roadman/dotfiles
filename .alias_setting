@@ -17,3 +17,6 @@ alias cwp="chatwork-cmd post-mes"
 alias cap2="cap _2.15.5_"
 alias cap3="cap _3.1.0_"
 
+# luarocks
+alias luarocks="luarocks --local"
+
