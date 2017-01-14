@@ -1,4 +1,5 @@
 # .bash_profile
+export PS1='\w $ '
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
@@ -7,7 +8,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/bin:/sbin:/usr/sbin
+PATH=$PATH:/sbin:/usr/sbin
 export PATH
 
 

@@ -6,7 +6,10 @@ alias setdate="sudo ntpdate ntp.nict.jp"
 alias vi=`which vim`
 alias lsl="ls -l"
 alias lsa="ls -lta"
-alias his="history"
+
+alias hi="history | less"
+alias hip="history | peco | cut -b7-"
+alias hii="\$(history | peco | cut -b7-)"
 
 ## yum
 alias yumls="yum list installed"

@@ -21,9 +21,9 @@ PLATFORM=`uname`
 . ~/.alias_setting_ssh
 . ~/.alias_setting_git
 
-if [ -f ~/.alias_setting_xcode ]; then
-  . ~/.alias_setting_xcode
-fi
+#if [ -f ~/.alias_setting_xcode ]; then
+#  . ~/.alias_setting_xcode
+#fi
 
 if [ $PLATFORM = "Darwin" ];then
   . ~/.alias_setting_mac
@@ -81,14 +81,14 @@ elif [ $PLATFORM = "Linux" ];then
     fi
 fi
 
-if [ -d $HOME/github/chatwork-api-command ];then
-    export PATH="$PATH:$HOME/github/chatwork-api-command/"
-fi
-
 if [ -f $HOME/.bash_xbuild ]; then
    source $HOME/.bash_xbuild
 fi
 
-source ~/.nvm/nvm.sh
-#nvm use default
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+export PATH=$PATH:$HOME/go_appengine/
+
+# fullpath prompt
+export PS1='\w $ '
 
