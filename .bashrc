@@ -81,14 +81,8 @@ elif [ $PLATFORM = "Linux" ];then
     fi
 fi
 
-if [ -d $HOME/github/chatwork-api-command ];then
-    export PATH="$PATH:$HOME/github/chatwork-api-command/"
-fi
-
 if [ -f $HOME/.bash_xbuild ]; then
    source $HOME/.bash_xbuild
 fi
 
-source ~/.nvm/nvm.sh
-#nvm use default
-
+export PATH=$HOME/.nodebrew/current/bin:$PATH

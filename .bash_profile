@@ -7,7 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/bin:/sbin:/usr/sbin
+PATH=$PATH:/sbin:/usr/sbin
 export PATH
 
 
