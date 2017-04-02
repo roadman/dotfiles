@@ -92,3 +92,7 @@ export PATH=$PATH:$HOME/go_appengine/
 # fullpath prompt
 export PS1='\w $ '
 
+
+export PATH=$PATH:/Users/ochiaiseiji/bin
+
+source '/Users/ochiaiseiji/lib/azure-cli/az.completion'
