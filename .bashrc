@@ -59,10 +59,10 @@ if [ -d $HOME/.plenv ]; then
   eval "$(plenv init -)"
 fi
 
-export GOROOT=`go env GOROOT`
 export GOPATH=$HOME/_go
 if [ -d $GOPATH ]; then
-  PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+  #PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+  PATH=$PATH:$GOPATH/bin
 fi
 
 if [ -d $HOME/vimbuild ]; then
