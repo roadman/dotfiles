@@ -22,3 +22,6 @@ alias cap3="cap _3.1.0_"
 
 # luarocks
 alias luarocks="luarocks --local"
+
+# love2d
+alias love="$HOME/love2d/love.app/Contents/MacOS/love"
