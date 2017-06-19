@@ -95,4 +95,4 @@ export PS1='\w $ '
 
 export PATH=$PATH:/Users/ochiaiseiji/bin
 
-source '/Users/ochiaiseiji/lib/azure-cli/az.completion'
+source '/Users/ochiaiseiji/azure-cli/lib/azure-cli/az.completion'
