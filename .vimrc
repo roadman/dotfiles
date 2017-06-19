@@ -55,6 +55,7 @@ NeoBundle 'editorconfig/editorconfig-vim'
 
 " Required:
 filetype plugin indent on
+filetype on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
@@ -64,7 +65,7 @@ NeoBundleCheck
 au BufNewFile,BufRead *.go setf GO
 
 set rtp+=$GOROOT/misc/vim
-exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+" xe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 exe "set rtp+=".globpath($GOPATH, "src/github.com/golang/lint/misc/vim")
 
 vnoremap < <gv

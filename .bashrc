@@ -92,7 +92,7 @@ export PATH=$PATH:$HOME/go_appengine/
 # fullpath prompt
 export PS1='\w $ '
 
-
+export PATH="$HOME/.yarn/bin:$PATH"
 export PATH=$PATH:/Users/ochiaiseiji/bin
 
 source '/Users/ochiaiseiji/azure-cli/lib/azure-cli/az.completion'
