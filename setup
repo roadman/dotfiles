@@ -1,0 +1,16 @@
+cd ~/
+
+ln -s github/dotfiles/.gitmodules ~/.gitmodules
+ln -s github/dotfiles/.gitignore  ~/.gitignore
+
+ln -s github/dotfiles/.alias_setting     ~/.alias_setting
+ln -s github/dotfiles/.alias_setting_mac ~/.alias_setting_mac
+ln -s github/dotfiles/.alias_setting_git ~/.alias_setting_git
+
+ln -s github/dotfiles/.tmux.conf ~/.tmux.conf
+
+ln -s github/dotfiles/.bash_profile ~/.bash_profile
+ln -s github/dotfiles/.bashrc       ~/.bashrc
+
+ln -s github/dotfiles/.vimrc ~/.vimrc
+ln -s github/dotfiles/.vim   ~/.vim
