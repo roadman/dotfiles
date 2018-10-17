@@ -13,7 +13,7 @@ export PATH
 
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/ochiaiseiji/google-cloud-sdk/path.bash.inc'
+source '/Users/roadman/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/Users/ochiaiseiji/google-cloud-sdk/completion.bash.inc'
+source '/Users/roadman/google-cloud-sdk/completion.bash.inc'

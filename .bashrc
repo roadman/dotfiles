@@ -21,10 +21,6 @@ PLATFORM=`uname`
 . ~/.alias_setting_ssh
 . ~/.alias_setting_git
 
-#if [ -f ~/.alias_setting_xcode ]; then
-#  . ~/.alias_setting_xcode
-#fi
-
 if [ $PLATFORM = "Darwin" ];then
   . ~/.alias_setting_mac
 fi
@@ -61,12 +57,7 @@ fi
 
 export GOPATH=$HOME/_go
 if [ -d $GOPATH ]; then
-  #PATH=$PATH:$GOROOT/bin:$GOPATH/bin
   PATH=$PATH:$GOPATH/bin
-fi
-
-if [ -d $HOME/vimbuild ]; then
-    export PATH="$HOME/vimbuild/build/7.4/vim74/src:$PATH"
 fi
 
 if [ $PLATFORM = "Darwin" ];then
@@ -81,17 +72,6 @@ elif [ $PLATFORM = "Linux" ];then
     fi
 fi
 
-if [ -f $HOME/.bash_xbuild ]; then
-   source $HOME/.bash_xbuild
-fi
-
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-export PATH=$PATH:$HOME/go_appengine/
-
 # fullpath prompt
 export PS1='\w $ '
 
-export PATH="$HOME/.yarn/bin:$PATH"
-export PATH=$PATH:/Users/ochiaiseiji/bin
-source '/Users/ochiaiseiji/lib/azure-cli/az.completion'
