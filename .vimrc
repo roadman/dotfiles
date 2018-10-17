@@ -51,7 +51,6 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'fatih/vim-go'
 "NeoBundle 'tsaleh/vim-matchit'
 NeoBundle 'tpope/vim-rails'
-NeoBundle 'cohama/lexima.vim'
 
 " Required:
 filetype plugin indent on

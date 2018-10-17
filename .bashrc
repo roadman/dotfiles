@@ -74,4 +74,3 @@ fi
 
 # fullpath prompt
 export PS1='\w $ '
-
