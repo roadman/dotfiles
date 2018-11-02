@@ -55,6 +55,8 @@ if [ -d $HOME/.plenv ]; then
   eval "$(plenv init -)"
 fi
 
+export PATH="$HOME/.goenv/bin:$PATH"
+eval "$(goenv init -)"
 export GOPATH=$HOME/_go
 if [ -d $GOPATH ]; then
   PATH=$PATH:$GOPATH/bin
@@ -74,3 +76,7 @@ fi
 
 # fullpath prompt
 export PS1='\w $ '
+
+eval "$(direnv hook bash)"
+
+export PATH="/usr/local/opt/mysql\@5.7/bin:$PATH"
