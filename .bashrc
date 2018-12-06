@@ -18,7 +18,7 @@ PLATFORM=`uname`
 
 # User specific aliases and functions
 . ~/.alias_setting
-. ~/.alias_setting_ssh
+#. ~/.alias_setting_ssh
 . ~/.alias_setting_git
 
 if [ $PLATFORM = "Darwin" ];then
@@ -55,6 +55,11 @@ if [ -d $HOME/.plenv ]; then
   eval "$(plenv init -)"
 fi
 
+if [ -d $HOME/.nodenv ]; then
+  export PATH=$HOME/.nodenv/bin:$HOME/.nodenv/shims/:$PATH
+  eval "$(nodenv init -)"
+fi
+
 export PATH="$HOME/.goenv/bin:$PATH"
 eval "$(goenv init -)"
 export GOPATH=$HOME/_go
@@ -74,8 +79,7 @@ elif [ $PLATFORM = "Linux" ];then
     fi
 fi
 
-# fullpath prompt
-export PS1='\w $ '
+export PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \w\[\033[0;32m\] - [$(git branch 2>/dev/null | grep "^*" | colrm 1 2)\[\033[0;32m\]]\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\]\[\033[0m\] '
 
 eval "$(direnv hook bash)"
 
