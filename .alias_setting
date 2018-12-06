@@ -24,3 +24,5 @@ alias cap3="cap _3.1.0_"
 alias luarocks="luarocks --local"
 
 alias rebash=". ~/.bashrc"
+
+alias fig='docker-compose'

@@ -8,8 +8,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-#PATH=/usr/bin/:$PATH:/sbin/:/usr/local/sbin/
-PATH=/usr/local/bin:$PATH
 export LANG=ja_JP.UTF-8
 
 export HOMEBREW_CACHE=~/Library/Caches/Homebrew/
@@ -48,11 +46,11 @@ fi
 if [ -d $HOME/.pyenv ]; then
   export PATH=$HOME/.pyenv/bin:$HOME/.pyenv/shims:$PATH
   eval "$(pyenv init -)"
-fi
-
-if [ -d $HOME/.plenv ]; then
-  export PATH=$HOME/.plenv/bin:$HOME/.plenv/shims/:$PATH
-  eval "$(plenv init -)"
+  #PYENV=$(pyenv version | cut -d. -f1,2)
+  #if [ "$PYENV" != "" ]; then
+  #  echo "pyenv python version: $PYENV"
+  #  export PATH=$HOME/.local/bin:$PATH
+  #fi
 fi
 
 export PATH="$HOME/.goenv/bin:$PATH"
