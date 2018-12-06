@@ -2,7 +2,7 @@
 alias gitdf="git diff"
 alias gitst="git status"
 alias gitpsm="git push origin master"
-alias gitps="git push origin"
+alias gitps="git push -u"
 alias gitpl="git pull --prune"
 #alias gitlg="git log"
 #alias gitlg="git log --graph --name-status --relative-date --decorate --color"
